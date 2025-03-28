@@ -22,7 +22,7 @@ jobs:
 
       - name: Deploy files to S3
         run: |
-          aws s3 sync ./my-static-website-s3 s3://gfg-static --delete
+          aws s3 sync ./my-static-website s3://gfg-static --delete
 
       - name: Invalidate CloudFront Cache (Optional)
         run: |
